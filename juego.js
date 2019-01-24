@@ -5,7 +5,7 @@ const esmeralda = document.getElementById('esmeralda')
 const btnEmpezar = document.getElementById('btnEmpezar')
 const txtLevel = document.getElementById('level');
 const countLevel = document.getElementById('countLevel')
-const ULTIMO_NIVEL = 3
+const ULTIMO_NIVEL = 10
 
 class Juego {
   constructor() {
