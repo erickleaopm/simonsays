@@ -1,0 +1,158 @@
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+  margin: 0;
+  background: #95a5a6;
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header {
+  display: inherit;
+  justify-content: center;
+  flex-direction: inherit;
+  align-items: center;
+  height: 200px;
+  padding: 1em;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.header h1{
+  color: #ffffff;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.header h2{
+  color: #2c3e50;
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.gameboard {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 400px;
+  max-height: 400px;
+  position: relative;
+}
+
+.color {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  transition: .2s;
+  will-change: transform;
+  position: relative;
+  z-index: 1;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: left;
+}
+
+.azul {
+  background: #2980b9;
+}
+
+.azul.light {
+  background: #3498db;
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.purpura {
+  background: #8e44ad;
+}
+
+.purpura.light {
+  background: #9b59b6;
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.rojizo {
+  background: #c0392b;
+}
+
+.rojizo.light {
+  background: #e74c3c;
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.esmeralda {
+  background: #27ae60;
+}
+
+.esmeralda.light {
+  background: #2ecc71;
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.btn {
+  text-align: center;
+  background: lightgray;
+  padding: .6em .8em .8em;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: inset 0 -.2em rgba(0,0,0, .2);
+  outline: 0;
+  transition: .2s;
+  opacity: 1;
+  will-change: opacity, transform;
+}
+.btn:active {
+  transform: scale(.9);
+}
+
+.btn-start {
+  width: 100%;
+  max-width: 420px;
+  height: 100px;
+  background: #d35400;
+  font-size: 2.5rem;
+  position: absolute;
+  top: calc(50% + 50px);
+  z-index: 10;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.toggle {
+  display: none;
+}
+
+#level {
+  opacity: 0;
+  transition: .5s;
+}
+
+#level.show{
+  opacity: 1;
+}
+
+#level span{
+  font-size: 1.2em;
+}
